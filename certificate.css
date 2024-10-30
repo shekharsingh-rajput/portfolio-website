@@ -1,0 +1,199 @@
+*{
+    background-color: #222;
+    color: aliceblue;
+}
+.nav-toggle {
+    display: none;
+  }
+.container1{
+    display: flex;
+}
+
+.nav{
+    display: flex;
+    flex-direction: left;
+    justify-content: space-between;
+    width: 100%;
+    height: 10vh;
+    padding: 2px;
+    align-items: center;
+    margin-right: 2vw;
+    text-decoration: none;
+    color: aliceblue;
+}
+nav h1{
+    margin: 5vw;
+    display: flex;
+    justify-content: space-around;
+    size: 2vh;
+}
+
+.link{
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    flex-direction: row;
+    padding-left: 4px;
+    gap: 2vw;
+    margin-right: 5px;
+}
+.link a{
+    text-decoration: none;
+    color: chartreuse;
+}
+
+.link a:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgba(7, 136, 93, 0.89);
+    border-radius: 5px;
+    content: "";
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    box-shadow: 0 0 20px rgba(225, 90, 0, 0.789);
+    z-index: -7;
+    
+}
+
+span{
+    font-size: 12vw;
+    color: orangered;
+    font-style: oblique;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    justify-content: center;
+    display: flex;
+    align-items: first baseline;
+    font-stretch: ultra-expanded;
+}
+
+.container1{
+    display: flex;
+    border-radius: 20%;
+}
+
+.scan1{
+    display: flex;
+    width: 100%;
+    height: 15vw;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    flex-wrap: wrap;
+    overflow-wrap:normal;
+    gap: 45px;
+    margin: 85px;
+    margin-bottom: 6px;
+}
+
+.certi{
+    width: 40%;
+    height: 170%;
+    /* margin-bottom: 55px; */
+}
+
+.certi2{
+    width: 40%;
+    height: 170%;
+    /* margin-bottom: 55px; */
+}
+
+.certi3{
+    width: 40%;
+    height: 170%;
+    /* margin-bottom: 55px; */
+}
+
+.certi4{
+    width: 40%;
+    height: 170%;
+    /* margin-bottom: 55px; */
+}
+
+
+/* ---------------------------------------------------------------- */
+@media screen and (max-width: 500px) {
+    .nav h1 {
+      font-size: 3vh;
+    }
+ 
+    .nav-toggle {
+        display: inline;
+        position: absolute;
+        left: 90%;
+        top: 5%;
+        font-size: 4vh;
+        color: rgb(238, 39, 39);
+      }
+ 
+    .link {
+       display: none; /* Hidden by default */
+       flex-direction: column; /* Stack links vertically */
+       position: absolute;
+       top: 10vh;
+       left: 0;
+       width: 100%;
+       height: 100vh;
+       background: rgba(0, 0, 0, 0.9);
+       justify-content: center;
+       align-items: center;
+       z-index: 999;
+       transform: translateY(-100%);
+       transition: transform 0.3s ease;
+     }
+ 
+    .link.active {
+       display: flex; /* Show links when the menu is toggled */
+       transform: translateY(0);
+     }
+ 
+     .link.active {
+       visibility: visible;
+       opacity: 1;
+       transform: translateY(0);
+       background-color: olivedrab;
+     }
+     .container1{
+        margin: 0%;
+     }
+
+     .scan1{
+        display: flex;
+        anchor-scope: 1;
+        justify-content: center;;
+        /* align-items: center; */
+        height: 100%;
+        width: 100%;
+        /* flex-wrap: wrap; */
+        /* overflow-wrap:normal; */
+        gap: 45px;
+        /* margin: 85px; */
+        /* margin-bottom: 6px; */
+        object-fit: cover;
+    }
+    
+    .scan1 img{
+        object-fit: contain;
+    }
+    .certi{
+        height: 100%;
+        width: 100%;
+    }
+    .certi2{
+        height: 100%;
+        width: 100%;
+    }
+
+    .certi3{
+        height: 100%;
+        width: 100%;
+    }
+
+    .certi4{
+        height: 100%;
+        width: 100%;
+    }
+
+
+ }

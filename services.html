@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const navToggle = document.querySelector('.nav-toggle'); // Hamburger icon
+          const navLinks = document.querySelector('.link'); // Menu links container
+      
+          // Check if the elements exist
+          if (navToggle && navLinks) {
+            navToggle.addEventListener('click', () => {
+              navLinks.classList.toggle('active'); // Toggle menu visibility
+              navToggle.classList.toggle('active'); // Toggle hamburger icon active state
+            });
+          } else {
+            console.error('Menu elements not found');
+          }
+        });
+    </script>
+    <div class="nav">
+
+        <h1>shekhar singh</h1>
+        <a href="#" class="nav-toggle"><i class="fa-sharp-duotone fa-solid fa-bars" style="--fa-primary-color: #c72323; --fa-secondary-color: #1aa86a;"></i></a>
+
+
+        <div class="link">   
+        <h4><a href="index.html">Home</a></h4>
+        <h4><a href="About.html">About</a></h4>
+        <h4><a href="skill.html">Skill</a></h4>
+        <h4><a href="services.html">Services</a></h4>
+        <h4><a href="project.html">Projects</a></h4>
+        <h4><a href="certificate.html">certificate</a></h4>
+        <h4><a href="contact.html">contact</a></h4>
+        </div>
+    </div>
+    <br><br><span>My services</span><br>
+    
+    <div class="container1">
+        <div class="services">
+          <h1>Web development</h1>
+            <p>My services include designing, coding, and maintaining websites or web applications.
+                 I ensure sites are user-friendly, responsive, and secure.
+                 My expertise covers front-end (UI/UX) and back-end (server, database) development, e-commerce
+                 integration, SEO optimization, and troubleshooting technical issues to deliver high-performance,
+                  scalable digital solutions.</p>
+        </div>
+    
+        <div class="services1">
+            
+        </div>
+
+        <div class="services2">
+
+            hello
+        </div>
+
+
+        </div>
+    </div>
+</body>
+</html>
